@@ -5,8 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo ALbum</title>
+    <style>
+.photo-frame{
+    width: 300px;
+    height: 200px;
+    border: 2px solid fuchsia;
+    border-radius: 5px;
+    position: relative;
+}
+.photo img{
+    width: 100%;
+    border-radius: 5px;
+}
+.photo-detail{
+    display: none;
+    position: absolute;
+    width: 300px;
+    top: 0;
+}
+.photo h3{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.photo p{
+    color: whitesmoke;
+}
+.photo-frame:hover .photo-detail{
+    display: block;
+    background-color: rgba(218, 165, 32, 0.39);
+}
+
+
+    </style>
 </head>
 <body>
     <h1>My Photo ALbum</h1>
+    <div class="photo-album">
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="img/TIGER.jpg" alt="">
+                <div class="photo-detail">
+                    <h3>The Liger</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos nemo, eaque quam accusamus, necessitatibus quidem quia perspiciatis nisi vel quod totam odit ut aperiam qui adipisci repudiandae tenetur unde cum?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
 </body>
 </html>
